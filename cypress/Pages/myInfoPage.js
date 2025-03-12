@@ -39,13 +39,16 @@ class MyInfoPage {
         cy.get(this.selectorsList().birthCombobox).eq(8).clear().click().type(dateBirth)
         //cy.get(this.selectorsList().closeCombobox).click()
         cy.get(this.selectorsList().selectGender).eq(0).click()
-    }
+    
 
+    }
+    
     saveform() {
         cy.get(this.selectorsList().submitButton).eq(0).click()
         cy.get('body').should('contain', 'Successfully Updated')
     }
 } 
+
 
 
 

@@ -17,10 +17,10 @@ const chance = new Chance();
 
 
 // DESCRIBE 
-describe('Teste de Login', () => {
+describe('Test User', () => {
   
 // USER TEST
-it.only('Login Success', () => {
+it('Test User', () => {
   loginPage.accessLoginPage()
   loginPage.loginWithAnyUser(userData.userSucess.username, userData.userSucess.password)
   dashboardPage.checkDashboardPage()
